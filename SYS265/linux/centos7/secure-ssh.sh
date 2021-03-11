@@ -1,10 +1,10 @@
 #!/bin/bash
-#secure-ssh.sh
-#author kjhopp
-#creates a new ssh user using $1 parameter
-#adds a public key from the local repo or curled from the remote repo
-#removes roots ability to ssh in
-#echo "ALL OF YOUR CODE GOES HERE"
+# secure-ssh.sh
+# author kjhopp
+# creates a new ssh user using $1 parameter
+# adds a public key from the local repo or curled from the remote repo
+# removes roots ability to ssh in
+# echo "ALL OF YOUR CODE GOES HERE"
 sudo useradd -m -d /home/$1 -m -d /home/$1 -s /bin/bash $1
 sudo mkdir /home/$1/.ssh
 sudo touch /home/$1/.ssh/authorize_keys
